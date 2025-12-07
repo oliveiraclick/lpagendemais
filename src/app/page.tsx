@@ -10,6 +10,20 @@ import { content } from '@/data/content';
 export const metadata = {
   title: `${content.brand.name} - ${content.brand.subheadline}`,
   description: content.hero.description,
+  openGraph: {
+    title: content.brand.name,
+    description: content.hero.description,
+    images: [
+      {
+        url: '/logo-full.png', // Fallback to logo if no specific OG image
+        width: 1200,
+        height: 630,
+        alt: content.brand.name,
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
 };
 
 export default function Home() {
