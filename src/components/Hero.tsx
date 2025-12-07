@@ -29,9 +29,9 @@ export default function Hero() {
                 {/* Right Side: Visual/Floating Elements */}
                 <div className={styles.visual}>
                     <div className={styles.floatingCard} style={{ top: '20%', right: '10%' }}>
-                        <div className={styles.cardStat}>+300%</div>
-                        <div className={styles.cardTitle}>Lucro Médio</div>
-                        <div className={styles.cardSub}>Em 3 meses de uso</div>
+                        <div className={styles.cardStat}>24h</div>
+                        <div className={styles.cardTitle}>Agendamento</div>
+                        <div className={styles.cardSub}>7/7 dias por semana</div>
                     </div>
 
                     <div className={styles.floatingCard} style={{ bottom: '20%', left: '10%', animationDelay: '1s' }}>
