@@ -1,0 +1,161 @@
+.benefitsSection {
+    background: #fff;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.textContent {
+    flex: 1;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.item {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.check {
+    min-width: 36px;
+    height: 36px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(225, 29, 72, 0.3);
+}
+
+.itemTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.itemDesc {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+.visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.visual::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.phoneMockup {
+    width: 320px;
+    height: 640px;
+    background: #fff;
+    border-radius: 45px;
+    border: 8px solid #111;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.screen {
+    background: #f8fafc;
+    height: 100%;
+    border-radius: 35px;
+    overflow: hidden;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #e2e8f0;
+}
+
+.appHeader {
+    height: 60px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #111;
+}
+
+.timeSlot {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    color: var(--text-primary);
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeSlot::after {
+    content: 'LIVRE';
+    font-size: 0.7rem;
+    background: #dcfce7;
+    color: #166534;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.btnMock {
+    margin-top: auto;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 16px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .visual {
+        width: 100%;
+    }
+}
