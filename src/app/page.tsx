@@ -15,7 +15,7 @@ export const metadata = {
     description: content.hero.description,
     images: [
       {
-        url: '/logo-full.png', // Fallback to logo if no specific OG image
+        url: '/og-image.png', // Updated to use the Symbol "A"
         width: 1200,
         height: 630,
         alt: content.brand.name,
